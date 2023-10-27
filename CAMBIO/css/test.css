@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@100&family=Roboto:wght@100;500&family=Zen+Kaku+Gothic+Antique:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.group{
+height: 100vh;
+background-image: linear-gradient(rgb(70, 69, 69), rgb(22, 22, 22));
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.group label{
+position: relative;
+width: 90px;
+height: 30px;
+    }
+    .group label input{
+        position: absolute;
+        z-index: 1;
+       
+            }
+   .group input[type="checkbox"]{
+    appearance: none;
+   }         
+.group label span{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #4d4d4d;
+        border-radius: 80px;
+        transition: 0.5s;
+}
+      
+
+.group label input[type="checkbox"]:checked ~ span{
+ background: rgb(90, 167, 109);
+}
+
+ label span i{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 2px;
+    left: 4px;
+    background: #8b8b8b;
+    border-radius: 80px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+label input[type="checkbox"]:checked ~ span i{
+ left: 60px;
+ background: #bebebe;
+}
+
+label  p{
+    position:absolute;
+    font-size: 25px;
+}
+
+label  .one{
+    position:absolute;
+    left: 120px;
+    font-weight: bold;
+    color: rgb(112, 112, 112);
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    transition: 0.5s;
+}
+
+label  .off{
+    position:absolute;
+    left: -70px;
+    font-weight: bold;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    color: rgb(141, 141, 141);
+
+}
+label input[type="checkbox"]:checked ~ .one{
+    position:absolute;          
+    font-weight: bold;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    color: rgb(141, 141, 141);
+    box-shadow: 2px 2px 2px rgb(167, 167, 167);
+ 
+   }
+   
+   label input[type="checkbox"]:checked ~ .off{
+    position:absolute;          
+    font-weight: bold;
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+    color: rgb(141, 141, 141);
+
+   }
+   
